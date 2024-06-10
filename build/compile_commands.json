@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/jerry/Development/projects/hhgen/build",
+  "command": "gcc    -Wall -Werror -g -o CMakeFiles/hhgen-cli.dir/src/main.c.o -c /home/jerry/Development/projects/hhgen/src/main.c",
+  "file": "/home/jerry/Development/projects/hhgen/src/main.c",
+  "output": "CMakeFiles/hhgen-cli.dir/src/main.c.o"
+},
+{
+  "directory": "/home/jerry/Development/projects/hhgen/build",
+  "command": "gcc    -Wall -Werror -g -o CMakeFiles/hhgen-cli.dir/src/hhgen.c.o -c /home/jerry/Development/projects/hhgen/src/hhgen.c",
+  "file": "/home/jerry/Development/projects/hhgen/src/hhgen.c",
+  "output": "CMakeFiles/hhgen-cli.dir/src/hhgen.c.o"
+},
+{
+  "directory": "/home/jerry/Development/projects/hhgen/build",
+  "command": "gcc    -Wall -Werror -g -o CMakeFiles/hhgen-cli.dir/src/lib/jlib/jlib.c.o -c /home/jerry/Development/projects/hhgen/src/lib/jlib/jlib.c",
+  "file": "/home/jerry/Development/projects/hhgen/src/lib/jlib/jlib.c",
+  "output": "CMakeFiles/hhgen-cli.dir/src/lib/jlib/jlib.c.o"
+},
+{
+  "directory": "/home/jerry/Development/projects/hhgen/build",
+  "command": "gcc    -Wall -Werror -g -o CMakeFiles/hhgen-cli.dir/src/lib/jlib/jio.c.o -c /home/jerry/Development/projects/hhgen/src/lib/jlib/jio.c",
+  "file": "/home/jerry/Development/projects/hhgen/src/lib/jlib/jio.c",
+  "output": "CMakeFiles/hhgen-cli.dir/src/lib/jlib/jio.c.o"
+},
+{
+  "directory": "/home/jerry/Development/projects/hhgen/build",
+  "command": "gcc    -Wall -Werror -g -o CMakeFiles/hhgen-cli.dir/src/lib/jlib/jdate.c.o -c /home/jerry/Development/projects/hhgen/src/lib/jlib/jdate.c",
+  "file": "/home/jerry/Development/projects/hhgen/src/lib/jlib/jdate.c",
+  "output": "CMakeFiles/hhgen-cli.dir/src/lib/jlib/jdate.c.o"
+}
+]

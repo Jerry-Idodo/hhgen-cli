@@ -1,0 +1,1 @@
+gcc -g;-Wall "CMakeFiles/hhgen-cli.dir/src/main.c.o" "CMakeFiles/hhgen-cli.dir/src/hhgen.c.o" "CMakeFiles/hhgen-cli.dir/lib/jilib/jilib.c.o" "CMakeFiles/hhgen-cli.dir/lib/jilib/jiio.c.o" "CMakeFiles/hhgen-cli.dir/lib/jilib/jidate.c.o" -o hhgen-cli 

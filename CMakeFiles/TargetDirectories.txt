@@ -1,0 +1,3 @@
+/home/jerry/Development/projects/hhgen/CMakeFiles/hhgen-cli.dir
+/home/jerry/Development/projects/hhgen/CMakeFiles/edit_cache.dir
+/home/jerry/Development/projects/hhgen/CMakeFiles/rebuild_cache.dir
