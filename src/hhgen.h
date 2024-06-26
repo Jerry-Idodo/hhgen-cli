@@ -27,7 +27,11 @@ struct HHDaily {
 };
 
 int hh_gen_io(void);
-int hh_gen(double (*hh_data)[48], const struct JDate *start, const double usage, const uint baseload, const int (*opening_times)[2]);
-int hh_data_save(const char *filename, const double (*hh_data)[48], const struct JDate *start_date);
+int hh_gen(struct HHDaily *hh_data,
+           const struct JDate *start,
+           const double usage,
+           const double baseload,
+           const int (*opening_times)[2]);
+int hh_data_save(const char *filename, const struct HHDaily *hh_data);
 
 #endif
