@@ -16,9 +16,9 @@
  * =====================================================================================
  */
 #include "hhgen.h"
-#include "lib/jlib/jlib.h"
-#include "lib/jlib/jio.h"
-#include "lib/jlib/jdate.h"
+#include "jlib.h"
+#include "jio.h"
+#include "jdate.h"
 #include "stdio.h"
 #include <string.h>
 #include <stdlib.h>
@@ -50,7 +50,7 @@ static int hh_get_time(const char *time)
 static void get_daily_hours(const char *prompt, int *day)
 {
 	char input_str[16];
-	static const char *delim = " "; 
+	static const char *delim = " ";
 
 	while (1) {
 		memset(input_str, 0, 16);
@@ -62,13 +62,13 @@ static void get_daily_hours(const char *prompt, int *day)
 
 		const char *open_time = strtok(input_str, delim);
 		const char *close_time = strtok(NULL, delim);
-		day[0] = hh_get_time(open_time); 
-		day[1] = hh_get_time(close_time); 
+		day[0] = hh_get_time(open_time);
+		day[1] = hh_get_time(close_time);
 		if (day[0] == -1 || day[1] == -1) {
 			printf("Wrong time!, chose increaments of 30 mins\n");
 			continue;
 		}
-		
+
 		break;
 	}
 }
@@ -113,13 +113,13 @@ int hh_data_save(const char *filename, const struct HHDaily *hh_data)
 int hh_gen_io(void)
 {
 	struct HHDaily *hh_data = (struct HHDaily *)malloc(365 * sizeof *hh_data);
-	
+
 	struct JDate start_date = {1, 1, 2021};
 	double usage = 0.0;
 	double baseload = 0.0;
 	int opening_times[7][2];
 	char filename[32];
-	
+
 	/* Get Start Date*/
 	printf("Enter Start Date: ");
 	jdate_input(&start_date, 2000, 2030);
@@ -155,7 +155,7 @@ int hh_gen(struct HHDaily *hh_data,
 
 	double hh_offpeak;
 	double hh_peak;
-	hh_offpeak = (48 - opening_times[start_wday][1] + opening_times[start_wday][0]); 
+	hh_offpeak = (48 - opening_times[start_wday][1] + opening_times[start_wday][0]);
 	hh_offpeak += 52 * (48 - opening_times[1][1] + opening_times[1][0]);
 	hh_offpeak += 52 * (48 - opening_times[2][1] + opening_times[2][0]);
 	hh_offpeak += 52 * (48 - opening_times[3][1] + opening_times[3][0]);

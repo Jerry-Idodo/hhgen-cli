@@ -19,7 +19,7 @@
 #ifndef HHGEN_H
 #define HHGEN_H
 
-#include "lib/jlib/jdate.h"
+#include "jdate.h"
 
 struct HHDaily {
 	struct JDate date;
