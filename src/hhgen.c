@@ -165,9 +165,10 @@ int hh_gen(struct HHDaily *hh_data,
 	hh_offpeak += 52 * (48 - opening_times[0][1] + opening_times[0][0]);
 	hh_peak = 7 * 48 * 52 + 48 - hh_offpeak;
 
-	const double peak_usage = usage / (hh_peak + hh_offpeak * (baseload/100.0));
-	const double offpeak_usage = usage / (hh_offpeak + hh_peak * (100.0/baseload));
-
+	const double peak_usage = usage / (hh_peak + hh_offpeak * baseload / 100.0);
+	const double offpeak_usage = usage / (hh_offpeak + hh_peak * 100.0 / baseload);
+	// const double peak_usage = usage / (hh_offpeak * baseload / (100.0 - baseload) + hh_peak);
+	// const double offpeak_usage = usage / (hh_offpeak + hh_peak * (100.0 / baseload - 1));
 
 	for (int i = 0; i < 365; i++) {
 		int w = (i + start_wday) % 7;
